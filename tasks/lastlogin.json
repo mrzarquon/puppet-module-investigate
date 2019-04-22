@@ -1,0 +1,7 @@
+{
+  "puppet_task_version": 1,
+  "supports_noop": false,
+  "description": "This task returns the last 10 users that logged into a host",
+  "parameters": {
+  }
+}
