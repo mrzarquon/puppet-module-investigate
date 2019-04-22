@@ -1,4 +1,6 @@
-#!/bin/env ruby
+#!/opt/puppetlabs/puppet/bin/ruby
+
+# we're assuming this is being run in puppet ruby
 
 require 'open3'
 require 'json'
