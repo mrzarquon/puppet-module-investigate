@@ -13,12 +13,12 @@ output[0..9].each do |line|
   event = line.split
   dt =  event[4] +'-'+ event[5] +'-'+ event[6]
   # Mon-Apr-22-22:10
-  datetime = DateTime.strptime(dt, '%b-%d-%H:%M')
+  datetime = dt
   if event[7] == 'still'
     logged_in = "true"
   else
     logged_in = "false"
   end
-  login[datetime.to_s] = { 'user' => event[0], 'logged_in' => logged_in }
+  login[dt] = { 'user' => event[0], 'logged_in' => logged_in }
 end
 puts login.to_json
